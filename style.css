@@ -111,8 +111,8 @@ font-size:18px;
 
 .admin-btn,
 .logout-btn{
-width:45px;
-height:45px;
+width60px;
+height:60px;
 border:none;
 border-radius:12px;
 cursor:pointer;
@@ -414,40 +414,41 @@ line-height:1.2;
 margin-top:20px;
 }
 
+/* PREMIUM RECEIPT */
+
 .premium-receipt{
 background:#050505;
 color:white;
-border-radius:30px;
-padding:35px;
+border-radius:25px;
+padding:25px;
 border:2px solid #dc2626;
-box-shadow:0 0 40px rgba(220,38,38,.4);
-min-height:700px;
+box-shadow:0 0 25px rgba(220,38,38,.4);
+width:100%;
 }
 
 .premium-logo{
-font-size:48px;
+font-size:36px;
 font-weight:bold;
 text-align:center;
 color:#dc2626;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .premium-date{
 text-align:center;
-font-size:22px;
-color:#ddd;
-margin-bottom:25px;
+color:#ccc;
+margin-bottom:15px;
 }
 
 .receipt-divider{
-height:2px;
+height:1px;
 background:#dc2626;
-margin:25px 0;
+margin:15px 0;
 opacity:.6;
 }
 
 .premium-worker{
-font-size:30px;
+font-size:20px;
 text-align:right;
 }
 
@@ -458,37 +459,63 @@ font-weight:bold;
 
 .premium-total-title{
 text-align:center;
-font-size:30px;
-margin-top:40px;
+font-size:22px;
+margin-top:20px;
 color:#ccc;
 }
 
 .premium-total-box{
-margin-top:20px;
+margin-top:15px;
+padding:15px;
+border:2px solid #dc2626;
+border-radius:15px;
 text-align:center;
-font-size:70px;
+font-size:45px;
 font-weight:bold;
 color:#dc2626;
-border:2px solid #dc2626;
-border-radius:20px;
-padding:25px;
-box-shadow:0 0 25px rgba(220,38,38,.5);
+box-shadow:0 0 15px rgba(220,38,38,.5);
 }
 
 .premium-signature{
-margin-top:50px;
+margin-top:30px;
 text-align:center;
 }
 
 .signature-name{
-font-family:'Great Vibes',cursive;
-font-size:65px;
+font-family:'Great Vibes', cursive;
+font-size:55px;
 color:#dc2626;
 }
 
 .signature-text{
 margin-top:10px;
-color:#aaa;
+color:#999;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+.main-grid{
+grid-template-columns:1fr;
+}
+
+.manager-stats{
+grid-template-columns:1fr;
+}
+
+.premium-logo{
+font-size:28px;
+}
+
+.premium-total-box{
+font-size:32px;
+}
+
+.signature-name{
+font-size:40px;
+}
+
 }
 
 }

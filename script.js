@@ -265,28 +265,21 @@ document
 function generateInvoice(){
 
 if(currentOrder.length===0){
-
 alert("אין מוצרים");
 return;
-
 }
 
 const worker =
-localStorage.getItem(
-"currentWorker"
-);
+localStorage.getItem("currentWorker");
 
 const total =
-document.getElementById(
-"totalPrice"
-).innerText;
+document.getElementById("totalPrice").innerText;
 
 let products = "";
 
 currentOrder.forEach(item=>{
 
-products +=
-`
+products += `
 <div class="receipt-line">
 <span>${item.name} x${item.qty}</span>
 <span>₪${item.total}</span>
@@ -295,43 +288,45 @@ products +=
 
 });
 
-document
-.getElementById(
-"invoicePreview"
-).innerHTML =
+document.getElementById("invoicePreview").innerHTML = `
 
-`
-<div class="receipt">
+<div class="premium-receipt">
 
-<div class="receipt-header">
-
-<h1>
- שווארמה דבוש 🌯
-</h1>
-
-<p>
-${new Date().toLocaleString()}
-</p>
-
+<div class="premium-logo">
+🌯 שווארמה דבוש
 </div>
 
-<hr>
+<div class="premium-date">
+${new Date().toLocaleString()}
+</div>
 
-<p>
-עובד:
-<b>${worker}</b>
-</p>
+<div class="receipt-divider"></div>
 
-<hr>
+<div class="premium-worker">
+עובד: <span>${worker}</span>
+</div>
+
+<div class="receipt-divider"></div>
 
 ${products}
 
-<hr>
+<div class="receipt-divider"></div>
 
-<div class="receipt-total">
+<div class="premium-total-title">
+סה"כ לתשלום
+</div>
 
+<div class="premium-total-box">
 ₪${total}
+</div>
 
+<div class="premium-signature">
+<div class="signature-name">
+${worker}
+</div>
+<div class="signature-text">
+חתימת העובד
+</div>
 </div>
 
 </div>
@@ -341,22 +336,20 @@ ${products}
 fetch(
 "https://shawarmadabush.onrender.com/update-sales",
 {
-method: "POST",
-headers: {
-"Content-Type": "application/json"
+method:"POST",
+headers:{
+"Content-Type":"application/json"
 },
-body: JSON.stringify({
-name: worker,
-sales: Number(total)
+body:JSON.stringify({
+name:worker,
+sales:Number(total)
 })
 }
 )
-.then(function(){
+.then(()=>{
 updateManager();
 })
-.catch(function(err){
-console.error(err);
-});
+.catch(console.error);
 
 }
 
