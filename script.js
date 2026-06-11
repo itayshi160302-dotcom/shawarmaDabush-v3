@@ -422,15 +422,7 @@ document
 .classList.remove("hidden");
 
 }
-
-document
-.getElementById(
-"managerModal"
-)
-.classList.remove("hidden");
-
-}
-
+s
 function closeManager(){
 
 document
