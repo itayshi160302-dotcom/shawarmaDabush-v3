@@ -20,7 +20,7 @@ orders INTEGER DEFAULT 0
 `);
 
 app.get("/", (req,res)=>{
-res.send("Shawarma Dabush API Running 🚀");
+res.send("RESET TEST 123");
 });
 
 app.post("/create-worker",(req,res)=>{
