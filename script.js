@@ -838,4 +838,12 @@ alert(
 
 });
 
+function logout(){
+
+localStorage.removeItem("currentWorker");
+
+location.reload();
+
+}
+
 }

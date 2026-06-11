@@ -90,7 +90,9 @@ db.run(
 (name,password,sales,orders)
 VALUES (?,?,0,0)`,
 
-["itay","1234"],
+["itay hagever","1234"],
+
+["tomer biton","5678"],
 
 function(err){
 
