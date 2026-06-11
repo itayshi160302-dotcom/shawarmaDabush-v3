@@ -602,8 +602,6 @@ alert(
 "המערכת אופסה"
 );
 
-}
-
 function deleteWorker(){
 
 const worker =
