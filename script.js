@@ -801,15 +801,11 @@ canvas.toBlob(async(blob)=>{
 
 const file =
 new File(
-
 [blob],
-
 "shawarma-dabush.png",
-
 {
 type:"image/png"
 }
-
 );
 
 if(
@@ -820,23 +816,19 @@ files:[file]
 ){
 
 await navigator.share({
-
-title:
-" חשבונית שווארמה דבוש 🌯",
-
+title:" חשבונית שווארמה דבוש 🌯",
 files:[file]
-
 });
 
 }else{
 
-alert(
-"המכשיר לא תומך בשיתוף"
-);
+alert("המכשיר לא תומך בשיתוף");
 
 }
 
 });
+
+}
 
 function logout(){
 
