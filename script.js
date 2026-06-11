@@ -321,12 +321,8 @@ ${products}
 </div>
 
 <div class="premium-signature">
-<div class="signature-name">
-${worker}
-</div>
-<div class="signature-text">
-חתימת העובד
-</div>
+    <div class="signature-name">${worker}</div>
+    <div class="signature-title">חתימת העובד</div>
 </div>
 
 </div>
