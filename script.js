@@ -334,6 +334,10 @@ ${products}
 
 </div>
 
+</div>
+
+`;
+
 fetch(
 "https://shawarmadabush.onrender.com/update-sales",
 {
