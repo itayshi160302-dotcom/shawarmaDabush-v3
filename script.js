@@ -281,11 +281,6 @@ document.getElementById(
 "totalPrice"
 ).innerText;
 
-const typedSignature =
-document.getElementById(
-"typedSignature"
-).value;
-
 let products = "";
 
 currentOrder.forEach(item=>{
@@ -338,30 +333,6 @@ ${products}
 ₪${total}
 
 </div>
-
-<div class="employee-signature">
-
-<div style="
-font-family:'Great Vibes', cursive;
-font-size:60px;
-text-align:center;
-margin-top:20px;
-">
-${worker}
-</div>
-
-<h4>
-חתימת העובד
-</h4>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-`;
 
 fetch(
 "https://shawarmadabush.onrender.com/update-sales",

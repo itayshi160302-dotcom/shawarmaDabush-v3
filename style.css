@@ -414,4 +414,81 @@ line-height:1.2;
 margin-top:20px;
 }
 
+.premium-receipt{
+background:#050505;
+color:white;
+border-radius:30px;
+padding:35px;
+border:2px solid #dc2626;
+box-shadow:0 0 40px rgba(220,38,38,.4);
+min-height:700px;
+}
+
+.premium-logo{
+font-size:48px;
+font-weight:bold;
+text-align:center;
+color:#dc2626;
+margin-bottom:20px;
+}
+
+.premium-date{
+text-align:center;
+font-size:22px;
+color:#ddd;
+margin-bottom:25px;
+}
+
+.receipt-divider{
+height:2px;
+background:#dc2626;
+margin:25px 0;
+opacity:.6;
+}
+
+.premium-worker{
+font-size:30px;
+text-align:right;
+}
+
+.premium-worker span{
+color:#dc2626;
+font-weight:bold;
+}
+
+.premium-total-title{
+text-align:center;
+font-size:30px;
+margin-top:40px;
+color:#ccc;
+}
+
+.premium-total-box{
+margin-top:20px;
+text-align:center;
+font-size:70px;
+font-weight:bold;
+color:#dc2626;
+border:2px solid #dc2626;
+border-radius:20px;
+padding:25px;
+box-shadow:0 0 25px rgba(220,38,38,.5);
+}
+
+.premium-signature{
+margin-top:50px;
+text-align:center;
+}
+
+.signature-name{
+font-family:'Great Vibes',cursive;
+font-size:65px;
+color:#dc2626;
+}
+
+.signature-text{
+margin-top:10px;
+color:#aaa;
+}
+
 }
