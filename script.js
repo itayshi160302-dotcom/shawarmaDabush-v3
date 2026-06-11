@@ -602,7 +602,7 @@ alert(
 "המערכת אופסה"
 );
 
-function deleteWorker(){
+function deleteWorker (){
 
 const worker =
 document.getElementById(
