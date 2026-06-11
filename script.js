@@ -837,5 +837,3 @@ localStorage.removeItem("currentWorker");
 location.reload();
 
 }
-
-}
