@@ -565,36 +565,32 @@ workers[0].name;
 // RESET
 // ======================
 
-function resetSystem(){
+async function resetSystem(){
 
 if(
-!confirm(
-"לאפס את כל הנתונים?"
-)
+!confirm("לאפס את כל הנתונים?")
 ){
 return;
 }
 
-for(let key in localStorage){
+try{
 
-if(
-key.startsWith(
-"worker_"
-)
-){
-
-localStorage.setItem(
-
-key,
-
-JSON.stringify({
-
-sales:0,
-orders:0
-
-})
-
+await fetch(
+"https://shawarmadabush.onrender.com/reset-sales",
+{
+method:"POST"
+}
 );
+
+updateManager();
+
+alert("המערכת אופסה");
+
+}catch(err){
+
+console.error(err);
+
+alert("שגיאה באיפוס");
 
 }
 

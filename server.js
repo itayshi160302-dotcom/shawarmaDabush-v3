@@ -176,6 +176,30 @@ success:true
 
 });
 
+app.post("/reset-sales",(req,res)=>{
+
+db.run(
+`UPDATE workers
+SET sales = 0,
+orders = 0`,
+[],
+(err)=>{
+
+if(err){
+return res.status(500).json({
+error:"Server error"
+});
+}
+
+res.json({
+success:true
+});
+
+}
+);
+
+});
+
 app.listen(3000,()=>{
 console.log("Server running on port 3000");
 });
