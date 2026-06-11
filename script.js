@@ -415,6 +415,14 @@ document
 
 function openManager(){
 
+alert("הכפתור עובד");
+
+document
+.getElementById("managerModal")
+.classList.remove("hidden");
+
+}
+
 document
 .getElementById(
 "managerModal"
