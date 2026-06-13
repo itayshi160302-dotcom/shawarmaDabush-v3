@@ -20,7 +20,7 @@ orders INTEGER DEFAULT 0
 `);
 
 app.get("/", (req,res)=>{
-res.send("RESET TEST 123");
+res.send("version 999");
 });
 
 app.post("/create-worker",(req,res)=>{
